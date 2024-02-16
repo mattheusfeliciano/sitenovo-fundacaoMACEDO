@@ -27,7 +27,7 @@
 /*      14. RESPONSIVE STYLING
 /*
 /*========================================================================*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800|Trirong:300,300i,400,400i,500,500i,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800|Open Sans:300,300i,400,400i,500,500i,600,700,800,900");
 
 /**
  * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
@@ -180,6 +180,7 @@ select {
   vertical-align: middle;
 }
 
+
 /* Remove margins for navigation lists */
 nav ul,
 nav li {
@@ -197,6 +198,11 @@ th {
   font-weight: bold;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 td {
   vertical-align: top;
 }
@@ -211,9 +217,128 @@ input[type="radio"] {
   vertical-align: text-bottom;
 }
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
 input[type="checkbox"] {
   vertical-align: bottom;
 }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #bbb;
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #555;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 .ie7 input[type="checkbox"] {
   vertical-align: baseline;
@@ -232,10 +357,18 @@ textarea {
 }
 
 /***********************************************************************************************/
+/* MAPA */
+/***********************************************************************************************/
+
+
+
+
+
+/***********************************************************************************************/
 /* 01. GENERAL STYLING  */
 /***********************************************************************************************/
 body {
-  font: 16px/28px "Open Sans", sans-serif;
+  font: 16px/28px "Open Sans", sans-sans-serif;
   color: #777777;
   font-style: normal;
   font-weight: 400;
@@ -262,7 +395,7 @@ a:focus {
 }
 
 blockquote {
-  font: "Open Sans", sans-serif;
+  font: "Open Sans", sans-sans-serif;
   color: #333333;
 }
 
@@ -272,7 +405,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   color: #555555;
@@ -321,7 +454,7 @@ h6 {
 }
 
 p {
-  font: 16px/28px "Open Sans", sans-serif;
+  font: 16px/28px "Open Sans", sans-sans-serif;
   color: #777777;
   font-style: normal;
   font-weight: 400;
@@ -574,7 +707,7 @@ blockquote {
   padding: 12px 26px 26px 42px;
   margin: 0 0 20px;
   font-size: 14px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-sans-serif;
   background: #ffffff;
   position: relative;
   border: 1px solid #cccccc;
@@ -713,7 +846,7 @@ ol li {
 }
 
 .section-heading-wrapper h4 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #888888;
@@ -757,7 +890,7 @@ ol li {
 }
 
 .section-light-heading {
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 85px;
   font-weight: 700;
   left: 0;
@@ -1514,7 +1647,7 @@ header.one-page .navbar-nav>li>a span {
   margin-top: 36px;
   letter-spacing: 0em;
   position: relative;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-sans-serif;
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -1539,7 +1672,7 @@ header.one-page .navbar-nav>li>a span {
 }
 
 #slider_1 .slider-content h3 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-sans-serif;
   color: #ffffff;
   font-size: 24px;
   font-weight: 500;
@@ -1795,7 +1928,7 @@ header.one-page .navbar-nav>li>a span {
 }
 
 .banner-content h2 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-sans-serif;
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -1810,7 +1943,7 @@ header.one-page .navbar-nav>li>a span {
 }
 
 .banner-content h3 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
@@ -1852,7 +1985,7 @@ header.one-page .navbar-nav>li>a span {
 }
 
 .banner-content h2.offer-message {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-sans-serif;
   font-size: 90px;
   line-height: 90px;
   font-weight: 700;
@@ -2441,7 +2574,7 @@ header.one-page .navbar-nav>li>a span {
   color: #ffffff;
   letter-spacing: 0.03em;
   font-weight: 600;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
 }
 
@@ -2451,7 +2584,7 @@ header.one-page .navbar-nav>li>a span {
   text-transform: capitalize;
   letter-spacing: 0.03em;
   font-weight: 600;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   color: #F56527;
 }
 
@@ -2465,7 +2598,7 @@ header.one-page .navbar-nav>li>a span {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   font-weight: 600;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 50px;
 }
 
@@ -2503,7 +2636,7 @@ header.one-page .navbar-nav>li>a span {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   font-weight: 600;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 50px;
 }
 
@@ -2561,8 +2694,8 @@ header.one-page .navbar-nav>li>a span {
 }
 
 .team-layout-1 .team-info h3 {
-  font-family: "Trirong", serif;
-  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  text-transform: open sans;
   margin: 15px 0;
   font-size: 18px;
   letter-spacing: 0.05em;
@@ -2570,9 +2703,9 @@ header.one-page .navbar-nav>li>a span {
 }
 
 .team-layout-1 .team-info span {
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   color: #808080;
-  text-transform: uppercase;
+  text-transform: arial;
   font-size: 12px;
   letter-spacing: 0.05em;
 }
@@ -2614,6 +2747,7 @@ header.one-page .navbar-nav>li>a span {
   color: #F56527;
   background: #2c2c2c;
 }
+
 
 .team-layout-1:hover .team-member .team-social-share {
   bottom: 0;
@@ -2738,7 +2872,7 @@ header.one-page .navbar-nav>li>a span {
   font-size: 20px;
   line-height: 42px;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: open sans;
   color: #ffffff;
   margin-bottom: 0px;
 }
@@ -2757,7 +2891,7 @@ header.one-page .navbar-nav>li>a span {
   line-height: 48px;
   color: #ffffff;
   font-weight: 500;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .counter-block-1 .counter-postfix {
@@ -4228,7 +4362,7 @@ ul.pagination li:last-child {
   top: 15px;
   color: #f8f8f8;
   font-size: 32px;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .commentslist li article header h5 {
@@ -4383,10 +4517,11 @@ ul.pagination li:last-child {
   background-attachment: inherit;
   background-position: center center;
   background-color: transparent;
-  background-image: url("../images/header-bg.jpg");
+  background-image: url("../images/home_1_slider_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 0px solid #fff;
+  
 }
 
 .page-header:before {
@@ -4398,6 +4533,7 @@ ul.pagination li:last-child {
   left: 0;
   content: "";
   z-index: -1;
+  
 }
 
 .page-header h3 {
@@ -4406,7 +4542,7 @@ ul.pagination li:last-child {
   font-size: 36px;
   line-height: 24px;
   font-weight: 500;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   margin: 24px 0;
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -4428,6 +4564,43 @@ ul.pagination li:last-child {
   color: #F56527;
 }
 
+
+/********************
+REDES SOCIAIS
+/**********************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f2f2f2;
+  position: flex;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.redes-sociais {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.redes-sociais a {
+  margin-right: 8px; /* Aumenta o espaçamento entre os ícones */
+  text-decoration: none;
+  color: #333; /* Cor do texto */
+  display: flex;
+  align-items: left;
+}
+
+.redes-sociais img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  cursor: pointer;
+}
 /***********************************************************************************************/
 /* 07. EVENTS/CAMPAIGN PAGE */
 /***********************************************************************************************/
@@ -4508,7 +4681,7 @@ ul.pagination li:last-child {
 }
 
 .single-team-details h3 {
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -4518,7 +4691,7 @@ ul.pagination li:last-child {
 
 .single-team-details h4 {
   color: #9a9a9a;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -4704,7 +4877,7 @@ ul.pagination li:last-child {
   font-size: 90px;
   line-height: 100px;
   font-weight: 600;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   color: #ffffff;
 }
 
@@ -4713,7 +4886,7 @@ ul.pagination li:last-child {
   font-size: 32px;
   line-height: 42px;
   font-weight: 400;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-sans-serif;
   color: #F56527;
   text-transform: uppercase;
 }
@@ -4721,7 +4894,7 @@ ul.pagination li:last-child {
 .countdown-section h2 {
   color: #ffffff;
   margin-top: 48px;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   letter-spacing: 0.03em;
 }
@@ -5020,7 +5193,7 @@ ul.pagination li:last-child {
   font-size: 170px;
   font-weight: 600;
   letter-spacing: 0.1em;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   text-align: center;
   margin: 80px 0;
   color: #F56527;
@@ -5242,7 +5415,7 @@ footer p {
   position: relative;
   font-size: 32px;
   text-transform: capitalize;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0.03em;
   font-weight: 700;
   display: inline-block;
@@ -5379,7 +5552,7 @@ footer p {
   font-size: 24px;
   margin-bottom: 24px;
   text-transform: capitalize;
-  font-family: "Trirong", serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0.03em;
   font-weight: 500;
   display: inline-block;
@@ -6193,7 +6366,7 @@ footer p {
   }
 
   .section-banner .banner-content h2.offer-message {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-sans-serif;
     font-size: 36px;
     line-height: 42px;
     font-weight: 700;
@@ -6591,7 +6764,7 @@ footer p {
   }
 
   .section-banner .banner-content h2.offer-message {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-sans-serif;
     font-size: 36px;
     line-height: 42px;
     font-weight: 700;
@@ -6837,6 +7010,55 @@ footer p {
     margin-left: 120px;
     margin-right: 120px;
   }
+
+  body {
+    font-family: Arial, sans-sans-serif;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFA500;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .carousel-prev {
+    left: 10px;
+  }
+
+  .carousel-next {
+    right: 10px;
+  }
+
 }
 
 /*# sourceMappingURL=styles.css.map */
